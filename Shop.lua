@@ -1,7 +1,9 @@
 local Functions={};
-Functions.HttpGet=function(_,Link)
-    local _=nil;
-    return loadstring(game:HttpGet(Link,true))(_);
+Functions.HttpGet=function(Link)
+    local Player=game:GetService'Players'.LocalPlayer or game:GetService'Players'.PlayerAdded:Wait();
+    if Player.Parent=game:GetService'Players' then
+        return loadstring(game:HttpGet(Link,true))();
+    end;
 end;
 local Https={
     Functions=Functions.HttpGet('https://raw.githubusercontent.com/exegabriel/RBX-Scripts/main/Functions.lua');
