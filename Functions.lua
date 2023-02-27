@@ -42,7 +42,7 @@ end;
 Functions.LoadCustomAsset=function(String)
     if String=='' then
         return ''
-    elseif String:Find'rbxassetid://' or String:Find'roblox.com' or tonumber(String) then
+    elseif String:find'rbxassetid://' or String:find'roblox.com' or tonumber(String) then
         local NumberID=String:gsub('%D','');
         return 'rbxassetid://'..NumberID;
     else
