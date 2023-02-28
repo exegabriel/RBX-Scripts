@@ -14,6 +14,7 @@ local DefaultConfigurations={
             Timing=1;
             HeightOffset=0;
             CanKill=true;
+            JumpscareRange=25;
             SpawnFrontwards=false;
             BreakLights=true;
             FlickLights={
@@ -21,8 +22,9 @@ local DefaultConfigurations={
                 1;
             };
             CameraShaking={
-                false;
+                true;
                 {15,25,.1,.2};
+                50;
             };
             Rebounds={
                 true;
@@ -34,13 +36,13 @@ local DefaultConfigurations={
                 true;
                 UseChains=true;
                 ChainsID;
+                ChainsOffset=3.096;
                 ResistToChains=false;
                 BreakCrucifix=true;
                 Timing=2;
             };
             Jumpscare={
                 true;
-                25;
                 'Rush';
                 ImageID1='11715753154';
                 ImageID2='12243791457';
@@ -74,6 +76,7 @@ local DefaultConfigurations={
             LightType='GuidingLight';
             Messages={
                 true;
+                'GuidingLight';
                 {
                     'suck balls.';
                 };
