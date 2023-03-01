@@ -13,7 +13,7 @@ local DefaultConfigurations={
             EntitySpeed=100;
             Timing=1;
             HeightOffset=0;
-            CanKill=true;
+            AbleToJumpscare=true;
             JumpscareRange=25;
             SpawnFrontwards=false;
             BreakLights=true;
@@ -43,34 +43,36 @@ local DefaultConfigurations={
             };
             Jumpscare={
                 true;
-                'Rush';
-                ImageID1='11715753154';
-                ImageID2='12243791457';
-                SoundID1={
-                    0;
-                    {
-                        Volume=0;
+                JumpscareType='Rush';
+                Table={
+                    ImageID1='11715753154';
+                    ImageID2='12243791457';
+                    SoundID1={
+                        0;
+                        {
+                            Volume=0;
+                        };
                     };
-                };
-                SoundID2={
-                    0;
-                    {
-                        Volume=0;
+                    SoundID2={
+                        0;
+                        {
+                            Volume=0;
+                        };
                     };
-                };
-                Flashing={
-                    true;
-                    Color3.fromRGB(0,0,255);
-                };
-                Shaking={
-                    true;
-                    {15,25,.1,.2};
-                };
-                Teasing={
-                    true;
-                    Minimal=1;
-                    Maximal=2;
-                    TeaseTiming=1;
+                    Flashing={
+                        true;
+                        Color3.fromRGB(0,0,255);
+                    };
+                    Shaking={
+                        true;
+                        {15,25,.1,.2};
+                    };
+                    Teasing={
+                        true;
+                        Minimal=1;
+                        Maximal=2;
+                        TeaseTiming=1;
+                    };
                 };
             };
             Messages={
