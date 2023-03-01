@@ -16,7 +16,7 @@ local DefaultConfigurations={
             AbleToJumpscare=true;
             JumpscareRange=25;
             SpawnFrontwards=false;
-            BreakLights=true;
+            ShatterLights=true;
             FlickLights={
                 true;
                 1;
