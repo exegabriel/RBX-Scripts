@@ -73,7 +73,6 @@ local DefaultConfigurations={
                     TeaseTiming=1;
                 };
             };
-            LightType='GuidingLight';
             Messages={
                 true;
                 'GuidingLight';
@@ -105,6 +104,7 @@ local DefaultConfigurations={
             CameraShaking={
                 true;
                 {15,25,.1,.2};
+                50;
             };
             Rebounds={
                 true;
@@ -114,7 +114,6 @@ local DefaultConfigurations={
             };
             Jumpscare={
                 true;
-                80;
                 'Ambush';
                 ImageID1='11746956547';
                 ImageID2='11746956547';
@@ -145,9 +144,9 @@ local DefaultConfigurations={
                     TeaseTiming=1;
                 };
             };
-            LightType='GuidingLight';
             Messages={
                 true;
+                'GuidingLight';
                 {
                     'suck balls.';
                 };
@@ -187,11 +186,11 @@ local DefaultConfigurations={
         ItemDescription='Basic temporary light source';
         Price={
             true;
-            100;
+            50;
         };
         Stack={
             true;
-            1;
+            'x1';
         };
     };
     AchievementConfiguration={
