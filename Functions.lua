@@ -12,7 +12,7 @@ local Functions={
 Functions.ConvertToAsset=function(String)
     if isfile(String) then
         return Functions.GetAsset(String);
-    elseif String:find('rbxassetid') or tonumber(String) then
+    elseif String:find'rbxassetid' or tonumber(String) then
         local NumberID=String:gsub('%D','');
         return 'rbxassetid://'..NumberID;
     elseif String:find('http') then
